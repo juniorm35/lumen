@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Página de Bienvenida</title>
+ <link rel="stylesheet" href="styles.css">
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a FontAwesome para iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+    }
+
+    .sidebar {
+      background-color: #28a745;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      overflow-y: auto;
+      padding-top: 20px;
+    }
+
+    .sidebar .nav-link {
+      color: white !important;
+      padding: 10px 20px;
+    }
+
+    .sidebar .nav-link:hover {
+      background-color: #218838;
+      color: white !important;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #1e7e34 !important;
+    }
+
+    .brand-link {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #218838;
+    }
+
+    .content-wrapper {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .card-header {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      background-color: #218838;
+    }
+
+    .footer {
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand-link">
+      <img src="logo industria del te/Logo Tienda Ecológica Minimalista Beige.png" alt="Logo" class="img-circle elevation-3" style="width: 50px; opacity: .8">
+      <h4>Fabrica del te</h4>
+    </div>
+    <nav>
+      <ul class="nav flex-column">
+        <!-- Menú Productos -->
+        <li class="nav-item">
+          <a href="#productosSubmenu" class="nav-link" data-bs-toggle="collapse" aria-expanded="false">
+            <i class="fas fa-box"></i>
+            Productos
+            <i class="fas fa-angle-down float-end"></i>
+          </a>
+          <div class="collapse" id="productosSubmenu">
+            <ul class="nav flex-column ms-3">
+              <li class="nav-item">
+                <a href="Problematicas.html" class="nav-link">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a href="productos2.html" class="nav-link">Problematica y solucion</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Menú Sobre Nosotros -->
+        <li class="nav-item">
+          <a href="nosotros.html" class="nav-link">
+            <i class="fas fa-users"></i>
+            Sobre Nosotros
+          </a>
+        </li>
+
+        <!-- Menú Registro -->
+        <li class="nav-item">
+          <a href="register.html" class="nav-link">
+            <i class="fas fa-user-plus"></i>
+            Registro
+          </a>
+        </li>
+
+        <!-- Menú Inicio de Sesión -->
+        <li class="nav-item">
+          <a href="login.css" class="nav-link">
+            <i class="fas fa-sign-in-alt"></i>
+            Inicio de Sesión
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <div class="content-header">
+      <h1 class="m-0">Dashboard</h1>
+    </div>
+
+    <section class="content">
+      <div class="row">
+        <!-- Ejemplo de Tarjetas -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header">Productos Disponibles</div>
+            <div class="card-body">
+              <h3>120</h3>
+              <p>Productos en stock</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Más contenido -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Continúa desde el código anterior -->
+<div class="content-wrapper">
+    <div class="content-header">
+      <h1 class="m-0">Industria del Té en Argentina</h1>
+    </div>
+  
+    <section class="content">
+      <!-- Tarjetas informativas -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5><i class="fas fa-leaf"></i> Consumo Nacional</h5>
+            </div>
+            <div class="card-body">
+              <p>Argentina es uno de los principales consumidores de té en América Latina, con un crecimiento anual del <strong>15%</strong> en los últimos cinco años.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5><i class="fas fa-chart-line"></i> Exportaciones</h5>
+            </div>
+            <div class="card-body">
+              <p>El sector exporta más de <strong>USD 50 millones</strong> anuales, siendo el té negro el principal producto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5><i class="fas fa-dollar-sign"></i> Consumo Promedio</h5>
+            </div>
+            <div class="card-body">
+              <p>En promedio, un argentino consume <strong>1 kg</strong> de té al año, destacando su preferencia por el té en hebras y las infusiones de hierbas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Gráficos -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h5><i class="fas fa-chart-pie"></i> Porcentaje de Consumo por Tipo de Té</h5>
+            </div>
+            <div class="card-body">
+              <canvas id="consumoTipoTe"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h5><i class="fas fa-chart-bar"></i> Crecimiento Anual en Ventas (Millones de USD)</h5>
+            </div>
+            <div class="card-body">
+              <canvas id="crecimientoVentas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Agrega fondo elaborado -->
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f0fff4, #d4edda, #28a745);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+  
+  <!-- Scripts para gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Gráfico de Porcentaje de Consumo por Tipo de Té
+    const ctx1 = document.getElementById('consumoTipoTe').getContext('2d');
+    const consumoTipoTe = new Chart(ctx1, {
+      type: 'pie',
+      data: {
+        labels: ['Té Negro', 'Té Verde', 'Infusiones de Hierbas', 'Otros'],
+        datasets: [{
+          data: [55, 25, 15, 5],
+          backgroundColor: ['#218838', '#28a745', '#74c69d', '#c7f9cc'],
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+          },
+        },
+      }
+    });
+  
+    // Gráfico de Crecimiento Anual en Ventas
+    const ctx2 = document.getElementById('crecimientoVentas').getContext('2d');
+    const crecimientoVentas = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['2018', '2019', '2020', '2021', '2022'],
+        datasets: [{
+          label: 'Millones de USD',
+          data: [35, 40, 45, 50, 55],
+          backgroundColor: '#28a745',
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      }
+    });
+  </script>
+  
+  <div class="container-fluid">
+        
+          <!--Aca se colocaría detalles del Dashboard-->
+          <div id="new-data-alert" style="display: none; color: green; padding: 10px; background-color: #eaf7e6;">
+            ¡Hay un nuevo dato!
+        </div>
+
+
+          
+           
+    
+            <!-- Contenedor donde se mostrarán los datos de humedad -->
+            <div id="humedad-data">
+                <!-- Los datos de humedad se cargarán aquí dinámicamente -->
+            </div>
+    
+            <!-- Alerta de nuevo dato -->
+            <div id="new-data-alert" style="display: none; color: green; padding: 10px; background-color: #eaf7e6;">
+                ¡Hay un nuevo dato!
+            </div>
+     
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+        <script>
+            // Definimos manualmente la configuración en español
+            moment.updateLocale('es', {
+                relativeTime: {
+                    future: "en %s",
+                    past: "hace %s",
+                    s: "unos segundos",
+                    m: "un minuto",
+                    mm: "%d minutos",
+                    h: "una hora",
+                    hh: "%d horas",
+                    d: "un día",
+                    dd: "%d días",
+                    M: "un mes",
+                    MM: "%d meses",
+                    y: "un año",
+                    yy: "%d años"
+                }
+            });
+            moment.locale('es'); // Establecemos el idioma
+        </script>
+        
+        
+        <!-- Enlace a tu archivo de JavaScript -->
+        <script src="script.js"></script>
+
+
+
+</div><!-- /.container-fluid -->
+
+</body>
+
+</html>
+

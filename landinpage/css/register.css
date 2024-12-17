@@ -1,0 +1,169 @@
+/* Reset y configuraciones generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #57c1a1, #02a79d);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Contenedor del formulario */
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.register-container h1,
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Estilo de los campos de formulario */
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input:focus {
+    border-color: #02a79d;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Botones */
+.btn,
+form button[type="submit"],
+.back-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #02a79d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover,
+form button[type="submit"]:hover,
+.back-button:hover {
+    background-color: #047971;
+}
+
+/* Texto de redirección a login */
+.login-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-text a {
+    color: #047971;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de mensajes */
+.message {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message.show {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenedor de contraseñas con toggle */
+.password-container {
+    margin-bottom: 1rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding-right: 2.5rem; /* Espacio para el ícono */
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.input-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+    user-select: none;
+}

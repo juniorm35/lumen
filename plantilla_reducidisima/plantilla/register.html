@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Té Premium Argentina</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #57c1a1, #02a79d);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor del formulario */
+        .register-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        /* Título de la página */
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Campos del formulario */
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Campo en foco */
+        .input-field:focus {
+            border-color: #02a79d;
+            outline: none;
+        }
+
+        /* Botón de Crear Cuenta */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #02a79d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        /* Efecto hover en el botón */
+        .btn:hover {
+            background-color: #0a6e52;
+        }
+
+        /* Enlace para login */
+        .login-link {
+            margin-top: 15px;
+            color: #02a79d;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        /* Enlace hover */
+        .login-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Mensaje de error */
+        .error-msg {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="register-container">
+    <h2>Regístrate</h2>
+
+    <!-- Formulario de Registro -->
+    <form id="registerForm" onsubmit="return validarRegistro()">
+        <input type="text" id="nombre" class="input-field" placeholder="Nombre completo" required>
+        <input type="password" id="password" class="input-field" placeholder="Contraseña" required>
+        <div class="error-msg" id="error-message"></div>
+        <button type="submit" class="btn">Crear Cuenta</button>
+    </form>
+
+    <!-- Enlace de Login -->
+    <a href="login.html" class="login-link">¿Ya tienes cuenta? Inicia sesión aquí</a>
+</div>
+
+<script>
+    function validarRegistro() {
+        // Obtención de valores del formulario
+        var nombre = document.getElementById('nombre').value;
+        var contrasena = document.getElementById('password').value;
+        var errorMessage = document.getElementById('error-message');
+
+        // Validación simple
+        if (nombre === "" || contrasena === "") {
+            errorMessage.innerText = "Por favor, ingresa tanto tu nombre como la contraseña.";
+            return false;
+        }
+
+        // Si todo está bien, redirigir al landing
+        errorMessage.innerText = "";
+        window.location.href = 'landingindex.html'; // Redirección a landing
+        return false; // Evita que el formulario se envíe realmente
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    
+    top: 200px;
+    right: 20px;
+    width: 50%; /* Reducción del tamaño del contenedor */
+    max-width: 400px; /* Máximo tamaño aún más pequeño */
+    margin: 0 auto;
+    padding: 10px; /* Menor espacio interno */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 18px; /* Tamaño más pequeño */
+    margin-bottom: 10px;
+}
+
+#humedad-data {
+    position: absolute;
+    top: 920px; /* Ajusta esta coordenada vertical */
+    right: 22px; /* Lo mueve hacia la derecha */
+    width: 523px; /* Ajusta el ancho del contenedor */
+    height: 240px; /* Ajusta la altura según necesites */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto; /* Agrega scroll si hay mucho contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar elementos internos */
+.humedad-item {
+    background-color: #f0f8ff;
+    border: 1px solid #00796b;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+/* Contenedor pequeño con scroll */
+.humedad-container {
+    max-height: 200px; /* Reducción de altura */
+    overflow-y: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
+.new-data-alert {
+    position: absolute;
+    top: 20px; /* Coordenada superior */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px; /* Reducción de tamaño */
+    border-radius: 3px;
+    font-size: 12px;
+    display: none; /* Oculto inicialmente */
+    z-index: 1000;
+}
+
+.humedad-value {
+    font-size: 14px; /* Más pequeño */
+    font-weight: bold;
+    color: #00796b;
+}
+
+.humedad-time {
+    font-size: 10px;
+    color: #777;
+}

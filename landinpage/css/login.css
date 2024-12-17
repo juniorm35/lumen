@@ -1,0 +1,135 @@
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #57c1a1, #02a79d);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor del formulario */
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        /* Título de la página */
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Campos del formulario */
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Campo en foco */
+        .input-field:focus {
+            border-color: #02a79d;
+            outline: none;
+        }
+
+        /* Botón de Ingresar */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #02a79d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        /* Efecto hover en el botón */
+        .btn:hover {
+            background-color: #0a6e52;
+        }
+
+        /* Enlace para registro */
+        .register-link {
+            margin-top: 15px;
+            color: #02a79d;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        /* Enlace hover */
+        .register-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Mensaje de error */
+        .error-msg {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        
+/* Estilo de los campos de formulario */
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #666;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón de enviar */
+form button {
+    width: 85%;
+    padding: 10px;
+    background-color: #02a79d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #047971;
+}
+
+/* Texto de registro */
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-text a {
+    color: #047971;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
